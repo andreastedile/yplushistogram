@@ -57,7 +57,7 @@ class FaceList(list):
             area += face.area
         return area
 
-    def bandSurfaceArea(self, from_: float, to_: float):
+    def bandSurfaceArea(self, from_: float, to_: float) -> float:
         if not self:
             return 0.
         area = 0.
@@ -65,7 +65,7 @@ class FaceList(list):
             area += face.area
         return area
 
-    def avgYplus(self):
+    def avgYplus(self) -> float:
         if not self:
             return 0.
         tot = 0.
